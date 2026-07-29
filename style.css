@@ -224,6 +224,115 @@ footer{
     border-top:1px solid #333;
     color:#888;
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.site-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #333;
+}
+
+.logo-bar{
+    background:#981d2d;
+    padding:25px 40px;
+}
+
+.logo-bar h1{
+    font-size:32px;
+}
+
+.navigation{
+    display:flex;
+    gap:35px;
+    margin-right:40px;
+}
+
+.navigation a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.navigation a:hover{
+    color:#981d2d;
+}
+
+/* Page Heading */
+
+.year-header{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.sub-heading{
+    color:#981d2d;
+    letter-spacing:4px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.year-header h2{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.description{
+    max-width:700px;
+    margin:auto;
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:40px 60px 80px;
+}
+
+.garment{
+    background:#1a1a1a;
+    border:1px solid #333;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.garment img{
+    width:100%;
+    display:block;
+}
+
+.garment:hover{
+    transform:translateY(-8px);
+    border-color:#981d2d;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #333;
+    color:#888;
+}
+
 /*
 .garment-card img{
     width:25%;
